@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "OPPN",
-    "currentPage": "Sejm.html",
+    "currentPage": "dziennikustaw.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -44,7 +44,7 @@
         "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 42,
+    "uniqCompNum": 43,
     "versionPublish": "5.9.13",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -4979,9 +4979,79 @@
           },
           "_name": "header13",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header13\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" name=\"imageWidth\" title=\"Image Width\" min=\"1\" max=\"12\" step=\"1\" value=\"8\" condition=\"showImage\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\" mbr-if=\"showTitle || showText || showButtons\">\n      <div class=\"col-md-12 mb-5 content-head\">\n        <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Konstytucja NSDAP</b></h1>\n        <p class=\"mbr-text mbr-fonts-style mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Konstytucja państwa NSDAP.<br>Art 1 <br>Konstytucja jest najważniejszym prawem w kraju.<br>Art 2<br>Państwo NSDAP jest Demokratyczna.<br>Art 2.1<br>W Sejmie nie mogą uczestniczyć totalitarne partie.<br>Art 3<br>Podmiot który ma świadomość ma prawo konstytucji.<br>Art 3.1<br>Zwierzęta hodowlane nie posiadają praw konstytucji.<br>Art 4<br>Podmiotowi który ma świadomość nie można utrudniać życia.<br>Art 4.1<br>Podmiot może mieć tą podstawe konstytucji do karania<br>Art 5<br>Drogi oraz chodniki są miejscami publicznymi.<br>Art 5.1<br>Wyjątek teren prywatny<br>Art 6<br>Przezydent ma prawo unieważnić samemu.<br>Art 6.1<br>wiezniów, niewolników, osoby wydalone oraz wydane na śmierć.<br>Art 6.2<br>Prezydent nie może być posłem.<br>Art 6.3<br>Prezydent ma prawo wydać podmiot na śmierć lub kare.<br>Art 7<br>Złamanie świadomie konstytucje skutkuje byciem wrogiem publicznym.<br>Art 8<br>Strona OPPN Jest bezstronna i jest biuletynem NSDAP.<br>Art 9<br>Ustawy wprowadzane przez sejm są prawomocne.<br>Art 10<br>Obywatel NSDAP ma obowiazek głosowania na prezydenta.<br>Art 10.1<br>wyjątek wojna<br>Art 11<br>Bycie sedzią może mianować jedynie Prezydent.<br>Art 11.1<br>Sędzia musi być bezpartyjny.<br>Art 11.2<br>Sedzia jest prawomocny.<br>Art 11.3<br> uniewaznienie sedziego moze zrobic jedynie Prezydent.<br>Art 11.4<br>Sedzia ma prawo uniewaznic ustawe.<br>Art 11.4.1<br>Jedynie po dostaniu zawiadomienia od prezydenta.<br>Art 11.5<br>Sedzia nie płaci podatków<br>Art 11.6<br>sedzia moze uniewaznic immunited<br>Art 12<br>Sejm/senat są głównym miejscem prawomocnego tworzenia ustaw dla panstwa NSDAP.<br>Art 12.1<br>Ustawa nie może zmienić konstytucji lub być sprzecznym.<br>Art 12.2<br>sejm/senat może zmienić konstytucję jedynie w sytuacji gdy w sejmie/senacie jest ponad 60% glosów za. Który musi być zaakceptowane przez prezydenta.<br>Art 13 <br>poseł ma immunited<br>Art 13.1<br>poseł nie może być karany prawomocnym wyrokiem sądu nsdap.<br>Art 13.2<br>poseł nie płaci podatków<br>Art 14<br>mordestwo jest niedopuszczalne i karane<br>Art 14.1<br>Wyjątek wróg publiczny<br>Art 15<br>Obywatel płaci podatki<br>wyjątki art 11.5; Art 13.2<br>Art 16<br>Niedopuszczalna jest korupcja<br>Art 17 nidopuszczalne jest oszustwo w wyborach<br>Art 17.1<br>za takie przewinienie staj sie wrogiem publicznym</p>\n        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n          <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Create Free Website!</a>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 col-md-{{imageWidth}}\" mbr-if=\"showImage\">\n        <img src=\"../_images/hightlights/6.jpg\" alt=\"Mobirise Website Builder\" title>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header13\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" name=\"imageWidth\" title=\"Image Width\" min=\"1\" max=\"12\" step=\"1\" value=\"8\" condition=\"showImage\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\" mbr-if=\"showTitle || showText || showButtons\">\n      <div class=\"col-md-12 mb-5 content-head\">\n        <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Konstytucja NSDAP</b></h1>\n        <p class=\"mbr-text mbr-fonts-style mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Konstytucja państwa NSDAP.<br>Art 1 <br>Konstytucja jest najważniejszym prawem w kraju.<br>Art 2<br>Państwo NSDAP jest Demokratyczna.<br>Art 2.1<br>W Sejmie nie mogą uczestniczyć totalitarne partie.<br>Art 3<br>Podmiot który ma świadomość ma prawo konstytucji.<br>Art 3.1<br>Zwierzęta hodowlane nie posiadają praw konstytucji.<br>Art 4<br>Podmiotowi który ma świadomość nie można utrudniać życia.<br>Art 4.1<br>Podmiot może mieć tą podstawę konstytucji do karania<br>Art 5<br>Drogi oraz chodniki są miejscami publicznymi.<br>Art 5.1<br>Wyjątek teren prywatny<br>Art 6<br>Prezydent ma prawo unieważnić samemu.<br>Art 6.1<br>Więźniów, niewolników, osoby wydalone oraz wydane na śmierć.<br>Art 6.2<br>Prezydent nie może być posłem.<br>Art 6.3<br>Prezydent ma prawo wydać podmiot na śmierć lub kare.<br>Art 7<br>Złamanie świadomie konstytucje skutkuje byciem wrogiem publicznym.<br>Art 8<br>Strona OPPN Jest bezstronna i jest biuletynem NSDAP.<br>Art 9<br>Ustawy wprowadzane przez sejm są prawomocne.<br>Art 10<br>Obywatel NSDAP ma obowiązek głosowania na prezydenta.<br>Art 10.1<br>wyjątek wojna<br>Art 11<br>Bycie Sędzią może mianować jedynie Prezydent.<br>Art 11.1<br>Sędzia musi być bezpartyjny.<br>Art 11.2<br>Sędzia jest prawomocny.<br>Art 11.3<br> Unieważnienie Sędziego może zrobić jedynie Prezydent.<br>Art 11.4<br>Sędzia ma prawo unieważnić ustawę.<br>Art 11.4.1<br>Jedynie po dostaniu zawiadomienia od prezydenta.<br>Art 11.5<br>Sędzia nie płaci podatków<br>Art 11.6<br>Sędzia może unieważnić immunited<br>Art 12<br>Sejm/senat są głównym miejscem prawomocnego tworzenia ustaw dla Państwa NSDAP.<br>Art 12.1<br>Ustawa nie może zmienić konstytucji lub być sprzecznym.<br>Art 12.2<br>Sejm/senat może zmienić konstytucję jedynie w sytuacji gdy w sejmie/senacie jest ponad 60% głosów za. Który musi być zaakceptowane przez prezydenta.<br>Art 13 <br>Poseł ma immunited<br>Art 13.1<br>Poseł nie może być karany prawomocnym wyrokiem sądu NSDAP.<br>Art 13.2<br>Poseł nie płaci podatków<br>Art 14<br>Morderstwo jest niedopuszczalne i karane<br>Art 14.1<br>Wyjątek wróg publiczny<br>Art 15<br>Obywatel płaci podatki<br>wyjątki art 11.5; Art 13.2<br>Art 16<br>Niedopuszczalna jest korupcja<br>Art 17 <br>Niedopuszczalne jest oszustwo w wyborach<br>Art 17.1<br>Za takie przewinienie staje się wrogiem publicznym</p>\n        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n          <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Create Free Website!</a>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 col-md-{{imageWidth}}\" mbr-if=\"showImage\">\n        <img src=\"../_images/hightlights/6.jpg\" alt=\"Mobirise Website Builder\" title>\n      </div>\n    </div>\n  </div>\n</section>",
           "_cid": "ud9NRoiblk",
           "_anchor": "header13-12",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".image-wrap img": {
+              "width": "100%",
+              "@media (min-width: 992px)": {
+                "display": "block",
+                "margin": "auto",
+                "width": "(@imageWidth * 10%)"
+              }
+            },
+            ".row-links": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".header-menu": {
+              "margin-top": "2rem",
+              "list-style": "none",
+              "display": "flex",
+              "justify-content": "center",
+              "flex-wrap": "wrap",
+              "padding": "0",
+              "margin-bottom": "0",
+              "li": {
+                "padding": "0 1rem 1rem 1rem",
+                "p": {
+                  "margin": "0"
+                }
+              }
+            },
+            ".content-head": {
+              "max-width": "800px"
+            }
+          },
+          "_name": "header13",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header13\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" name=\"imageWidth\" title=\"Image Width\" min=\"1\" max=\"12\" step=\"1\" value=\"8\" condition=\"showImage\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\" mbr-if=\"showTitle || showText || showButtons\">\n      <div class=\"col-md-12 mb-5 content-head\">\n        <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Ustawa z dnia 20.05.2024</b></h1>\n        <p class=\"mbr-text mbr-fonts-style mt-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Art 1<br>Nick to imię lub znamię na terenie kraju NSDAP<br>Art 2<br>Obywatel ma prawo raz zmienić swój nick<br>Art 3<br>Instytucje państwowe mają prawo zmienić nick w sytuacji<br>Art 3.1<br>Wykroczenia według uznania sądu<br>Art 4<br>Prezydent może zmienić nick w każdej sytuacji<br>Art 4.1<br>Poseł oraz sąd może zmienić nick tylko po zgodzie prezydenta<br>Art 5<br>Zabrania się tworzenia nicków z:<br>-Obraźliwymi wyrazami, Wprowadzającymi w błąd<br>Art 5.1<br>Wyjątki do art. 5<br>-Wróg publiczny, za zgodą Prezydenta, za zgodą Sądu<br>Art 6<br>Prezes Partii ma prawo zwołać głosowanie sejmu odnośnie zmiany nicku<br>Art 6.1<br>Głosowanie musi mieć 50% poparcia (w górę)<br>Art 6.1.1<br>W głosowaniu musi być frekwencja min 50%<br>Art 6.2<br>Prezydent nie musi się zgodzić gdy głosowanie przejdzie pozytywnie</p>\n        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n          <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Create Free Website!</a>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 col-md-{{imageWidth}}\" mbr-if=\"showImage\">\n        <img src=\"@PROJECT_PATH@/assets/images/6.jpg\" alt=\"Mobirise Website Builder\" title>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "header13-16",
+          "_isUserblock": true,
+          "_cid": "udxjsheeB6",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
